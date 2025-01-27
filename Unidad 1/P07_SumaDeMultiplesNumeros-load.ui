@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>529</width>
-    <height>326</height>
+    <width>563</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,11 +17,11 @@
    <string notr="true">background-color: rgb(200, 216, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btn_sumar">
+   <widget class="QPushButton" name="btn_agregar">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>130</y>
+      <x>240</x>
+      <y>110</y>
       <width>201</width>
       <height>61</height>
      </rect>
@@ -41,14 +41,14 @@ border: 3px solid black;
 </string>
     </property>
     <property name="text">
-     <string>SUMAR</string>
+     <string>AGREGAR</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_A">
+   <widget class="QLineEdit" name="txt_numero">
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>45</y>
+      <y>115</y>
       <width>141</width>
       <height>61</height>
      </rect>
@@ -75,33 +75,33 @@ border-radius:25px;
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>10</y>
+      <y>80</y>
       <width>121</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;A:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;Número:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>5</y>
+      <x>80</x>
+      <y>195</y>
       <width>121</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;B:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;Suma:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_B">
+   <widget class="QLineEdit" name="txt_suma">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>40</y>
+      <x>80</x>
+      <y>230</y>
       <width>141</width>
       <height>61</height>
      </rect>
@@ -115,6 +115,7 @@ border-radius:25px;
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);
 border-radius:25px;
+border: 3px solid black;
 </string>
     </property>
     <property name="text">
@@ -124,13 +125,67 @@ border-radius:25px;
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QPushButton" name="btn_guardar">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>280</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>29</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(91, 121, 163);
+color: rgb(255, 255, 255);
+border-radius: 30px;
+border: 3px solid black;
+
+</string>
+    </property>
+    <property name="text">
+     <string>GUARDAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cargar">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>29</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(91, 121, 163);
+color: rgb(255, 255, 255);
+border-radius: 20px;
+border: 3px solid black;
+
+</string>
+    </property>
+    <property name="text">
+     <string>CARGAR</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>529</width>
+     <width>563</width>
      <height>24</height>
     </rect>
    </property>
