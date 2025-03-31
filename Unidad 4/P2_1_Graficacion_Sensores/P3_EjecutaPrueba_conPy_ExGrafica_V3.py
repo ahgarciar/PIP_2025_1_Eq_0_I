@@ -25,16 +25,16 @@ class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
     #Area de Slots
     def lecturas(self):
 
+        self.y.append(rnd.randint(0, 1023))  # valores de los sensores
         while len(self.y) < len(self.x):
             self.y.append(rnd.randint(0, 1023))  # valores de los sensores
-
         print(self.x)
         print(self.y)
-
-        self.ax.plot(self.x, self.y)
+        yaux = self.y[-70:]
+        #print(yaux)
+        self.ax.plot(self.x, yaux)
         self.canvas.draw()
-
-        del self.y[0]
+        #del self.y[0]
         plt.cla()
 
     def graficar(self):
